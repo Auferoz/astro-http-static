@@ -4,11 +4,11 @@ import { Clients, db } from 'astro:db';
 export default async function seed() {
 
 	await db.insert(Clients).values([
-		{ id: 1, name: "Lunes", age: 12, isActive: true},
-		{ id: 2, name: "Martes", age: 22, isActive: false},
-		{ id: 3, name: "Miercoles", age: 32, isActive: true},
-		{ id: 4, name: "Jueves", age: 42, isActive: false},
-		{ id: 5, name: "Viernes", age: 52, isActive: true},
+		{ name: "Lunes", age: 12, isActive: true},
+		{ name: "Martes", age: 22, isActive: false},
+		{ name: "Miercoles", age: 32, isActive: true},
+		{ name: "Jueves", age: 42, isActive: false},
+		{ name: "Viernes", age: 52, isActive: true},
 	]);
 
 

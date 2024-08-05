@@ -4,7 +4,7 @@ import { Clients, db } from 'astro:db';
 export const prerender = false;
 
 
-export const GET: APIRoute = async ({ params, request }) => {
+export const GET: APIRoute = async ({  }) => {
 
     const body = {
         method: 'GET'
@@ -22,7 +22,7 @@ export const GET: APIRoute = async ({ params, request }) => {
         });
 }
 
-export const POST: APIRoute = async ({ params, request }) => {
+export const POST: APIRoute = async ({ request }) => {
 
     try {
 
